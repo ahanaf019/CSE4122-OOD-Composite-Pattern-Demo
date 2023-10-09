@@ -14,5 +14,12 @@ public class Room implements IHousingStructure {
     public void getStructureDetails() {
         System.out.println("Room: " + roomType);
     }
+
+
+    @Override
+    public int getNoSubUnits() {
+        System.out.println("ERROR: Room has no subunits");
+        return 0;
+    }
     
 }

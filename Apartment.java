@@ -15,11 +15,6 @@ public class Apartment implements IHousingStructure {
     }
 
 
-    int getNoRooms() {
-        return rooms.size();
-    }
-
-
 
     @Override
     public void getStructureDetails() {
@@ -33,6 +28,11 @@ public class Apartment implements IHousingStructure {
         }
         System.out.println("=====================================");
         System.out.println();
+    }
+
+    @Override
+    public int getNoSubUnits() {
+        return rooms.size();
     }
     
 }

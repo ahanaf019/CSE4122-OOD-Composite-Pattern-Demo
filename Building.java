@@ -3,11 +3,11 @@ import java.util.ArrayList;
 public class Building implements IHousingStructure {
 
 
-    private ArrayList<Floor> floors;
+    private ArrayList<IHousingStructure> floors;
     private String buildingNumber;
 
     Building(String buildingNumber) {
-        floors = new ArrayList<Floor>();
+        floors = new ArrayList<IHousingStructure>();
         this.buildingNumber = buildingNumber;
     }
 
@@ -24,10 +24,17 @@ public class Building implements IHousingStructure {
 
         System.out.println("Floor No.\tNo. of Apartments");
         for(int i = 0; i < floors.size(); i++) {
-            System.out.println((i+1) + "\t\t" + floors.get(i).getNoApartments());
+            System.out.println((i+1) + "\t\t" + floors.get(i).getNoSubUnits());
         }
         System.out.println("=====================================");
         System.out.println();
+    }
+
+
+    @Override
+    public int getNoSubUnits() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getNoSubUnits'");
     }
     
 }

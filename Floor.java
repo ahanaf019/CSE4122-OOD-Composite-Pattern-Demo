@@ -2,22 +2,17 @@ import java.util.ArrayList;
 
 public class Floor implements IHousingStructure {
 
-    private ArrayList<Apartment> apartments;
+    private ArrayList<IHousingStructure> apartments;
     private String floorNumber;
 
     Floor(String floorNumber) {
-        apartments = new ArrayList<Apartment>();
+        apartments = new ArrayList<IHousingStructure>();
         this.floorNumber = floorNumber;
     }
 
     void addApartment(Apartment apartment) {
         apartments.add(apartment);
     }
-
-    int getNoApartments() {
-        return apartments.size();
-    }
-
 
 
     @Override
@@ -28,10 +23,15 @@ public class Floor implements IHousingStructure {
         
         System.out.println("Apartment No.\tNo. of Rooms");
         for(int i = 0; i < apartments.size(); i++) {
-            System.out.println((i+1) + "\t\t" + apartments.get(i).getNoRooms());
+            System.out.println((i+1) + "\t\t" + apartments.get(i).getNoSubUnits());
         }
         System.out.println("=====================================");
         System.out.println();
+    }
+
+    @Override
+    public int getNoSubUnits() {
+        return apartments.size();
     }
     
 }
