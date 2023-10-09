@@ -10,7 +10,7 @@ public class Floor implements IHousingStructure {
         this.floorNumber = floorNumber;
     }
 
-    void addApartment(Apartment apartment) {
+    void addApartment(IHousingStructure apartment) {
         apartments.add(apartment);
     }
 

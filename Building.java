@@ -11,7 +11,7 @@ public class Building implements IHousingStructure {
         this.buildingNumber = buildingNumber;
     }
 
-    void addFloor(Floor floor) {
+    void addFloor(IHousingStructure floor) {
         floors.add(floor);
     }
 
@@ -33,8 +33,7 @@ public class Building implements IHousingStructure {
 
     @Override
     public int getNoSubUnits() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getNoSubUnits'");
+        return floors.size();
     }
     
 }
