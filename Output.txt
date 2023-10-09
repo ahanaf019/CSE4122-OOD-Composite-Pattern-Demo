@@ -1,0 +1,68 @@
+=====================================
+Building Number: B-387/4
+Total Floors: 2
+Floor No.	No. of Apartments
+1		2
+2		2
+=====================================
+
+=====================================
+Floor Number: 1
+Total Apartments: 2
+Apartment No.	No. of Rooms
+1		6
+2		5
+=====================================
+
+=====================================
+Floor Number: 2
+Total Apartments: 2
+Apartment No.	No. of Rooms
+1		3
+2		6
+=====================================
+
+=====================================
+Apartment Number: 1-a
+Total Rooms: 6
+Room No.	Type
+1		Master Bedroom
+2		Guest BedRoom
+3		Dining Room
+4		Drawing Room
+5		Kitchen
+6		Storage Room
+=====================================
+
+=====================================
+Apartment Number: 1-b
+Total Rooms: 5
+Room No.	Type
+1		Master Bedroom
+2		Secondary BedRoom
+3		Dining Room
+4		Drawing Room
+5		Kitchen
+=====================================
+
+=====================================
+Apartment Number: 2-a
+Total Rooms: 3
+Room No.	Type
+1		Master Bedroom
+2		Dining Room
+3		Kitchen
+=====================================
+
+=====================================
+Apartment Number: 2-b
+Total Rooms: 6
+Room No.	Type
+1		Master Bedroom
+2		Guest BedRoom
+3		Guest BedRoom
+4		Dining Room
+5		Drawing Room
+6		Kitchen
+=====================================
+
